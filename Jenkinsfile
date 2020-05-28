@@ -15,6 +15,6 @@ stage('Build Docker Imagae'){
    stage('Run jar app'){
       powershell "docker run -d -p 8484:8484 Java."
     
-
+   }
 
 }
