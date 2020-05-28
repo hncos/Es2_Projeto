@@ -1,6 +1,6 @@
 def dockeruser = "hncos"
-def imagename = ""
-def container = ""
+def imagename = "openjdk"
+def container = "Java"
 node {
    echo 'Building Apache Docker Image'
 
@@ -11,6 +11,9 @@ stage('Git Checkout') {
 stage('Build Docker Imagae'){
      powershell "docker build -t  ${imagename} ."
     }
+   
+   stage('Run jar app'){
+      powershell "docker run -d 8484 Java
     
 
 
