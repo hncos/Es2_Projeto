@@ -1,4 +1,4 @@
-FROM openjdk:14
+FROM openjdk:7
 COPY . Es2/target/Es2-0.0.1-SNAPSHOT.jar
 WORKDIR  Es2/target
 
