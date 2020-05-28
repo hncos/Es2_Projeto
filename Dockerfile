@@ -1,4 +1,4 @@
-from openjdk:14-alpine
+from openjdk:12-alpine
 
 
 
