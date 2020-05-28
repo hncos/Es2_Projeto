@@ -1,5 +1,5 @@
 def dockeruser = "hncos"
-def imagename = "openjdk"
+def imagename = "teste"
 def container = "Java"
 node {
    echo 'Building Apache Docker Image'
@@ -8,7 +8,7 @@ stage('Git Checkout') {
     git 'https://github.com/hncos/Es2_Projeto.git'
     }
     
-stage('Build Docker Imagae'){
+stage('Build Docker Image'){
      powershell "docker build -t  ${imagename} ."
     }
    
