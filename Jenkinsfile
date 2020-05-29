@@ -10,7 +10,7 @@ stage('Git Checkout') {
    
    
    stage('Run container'){
-      powershell "docker run -it java . "
+      powershell "docker run -it ironman/teste. "
    }
     
 stage('Build Docker Image'){
