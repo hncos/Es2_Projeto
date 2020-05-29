@@ -9,7 +9,7 @@ stage('Git Checkout') {
     }
    
 stage('copy') {
-     powershell " docker copy C:/Users/Hugo/git/Es2_Projeto2/Es2/target . "
+     powershell " docker cp C:/Users/Hugo/git/Es2_Projeto2/Es2/target . "
          }
     
 stage('Build Docker Image'){
