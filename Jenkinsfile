@@ -7,6 +7,11 @@ node {
 stage('Git Checkout') {
     git 'https://github.com/hncos/Es2_Projeto.git'
     }
+   
+   
+   stage('Run container'){
+      powershell "docker run -it java . "
+   }
     
 stage('Build Docker Image'){
      powershell "docker build -t  ${imagename} ."
