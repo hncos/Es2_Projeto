@@ -8,9 +8,8 @@ stage('Git Checkout') {
     git 'https://github.com/hncos/Es2_Projeto.git'
     }
    
-   
-   stage('copy"){
-         powershell " docker copy C:\Users\Hugo\git\Es2_Projeto2\Es2\target . "
+stage('copy") {
+     powershell " docker copy C:\Users\Hugo\git\Es2_Projeto2\Es2\target . "
          }
     
 stage('Build Docker Image'){
